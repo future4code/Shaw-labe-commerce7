@@ -8,16 +8,16 @@ import ShoppingCartIten from "./Components/ShoppingCart/ShoppingCartIten"
 
 
 
-export class App extends React.Component {
+class App extends React.Component {
   render(){ 
     
     return (
-    <div >
+    <>
       
-    </div>
+    </>
   );
 }
  
 }
-
+export default App;
 
