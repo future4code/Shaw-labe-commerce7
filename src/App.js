@@ -1,26 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import styled from "styled-components"
+import Filters from "./Components/Filters/Filters"
+import ProductsCart from "./Components/Products/ProductsCart"
+import Products from "./Components/Products/Products"
+import ShoppingCart from "./Components/ShoppingCart/ShoppingCart"
+import ShoppingCartIten from "./Components/ShoppingCart/ShoppingCartIten"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+
+export class App extends React.Component {
+  render(){ 
+    
+    return (
+    <div >
+      
     </div>
   );
 }
+ 
+}
 
-export default App;
+
