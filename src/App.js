@@ -13,12 +13,14 @@ const AppContainer = styled.div`
   gap: 8px;
 `
 
+
 class App extends React.Component {
   state = {
     valorMinimo: 0,
     valorMaximo: 0,
     buscarPorNome: "",
   }
+
 
   onChangeValorMinimo = (event) => {
     this.setState({ valorMinimo: event.target.value })
@@ -47,5 +49,6 @@ class App extends React.Component {
     )
   }
 }
+
 
 export default App;
