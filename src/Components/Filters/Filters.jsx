@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
+
 const FilterContainer = styled.div`
 display: flex;
 flex-direction: column;   
@@ -34,6 +35,7 @@ const Bloco = styled.div`
 class Filter extends React.Component {
     render() {
         return (
+            <>
             <FilterContainer>
                 <Tittle>Filtros</Tittle>
                 <InputContainer>
@@ -65,6 +67,15 @@ class Filter extends React.Component {
                 </InputContainer>
 
             </FilterContainer>
+
+            
+
+            
+            </>
+
+            
+
+            
         )
     }
 }
