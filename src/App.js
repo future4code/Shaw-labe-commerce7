@@ -5,12 +5,15 @@ import ProductsCart from "./Components/Products/ProductsCart";
 import Products from "./Components/Products/Products";
 import ShoppingCart from "./Components/ShoppingCart/ShoppingCart";
 import ShoppingCartIten from "./Components/ShoppingCart/ShoppingCartIten";
+import Header from "./Components/Header/Header";
 
 const AppContainer = styled.div`
   display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-columns: 1fr 4fr 1fr;
   padding: 16px;
   gap: 8px;
+  background-color: #ffffff ;
+  
 `;
 
 class App extends React.Component {
@@ -34,7 +37,10 @@ class App extends React.Component {
 
   render() {
     return (
+      
       <AppContainer>
+       
+
         <Filters
           valorMinimo={this.state.valorMinimo}
           valorMaximo={this.state.valorMaximo}
@@ -45,7 +51,16 @@ class App extends React.Component {
         />
 
         <div>
-          <Products/>
+          <Products
+         /* products={products}
+          valorMinimo={this.state.valorMinimo}
+          valorMaximo={this.state.valorMaximo}
+          buscarPorNome={this.state.buscarPorNome} */
+          />
+        </div>
+
+        <div>
+          <ShoppingCart/>
         </div>
 
       </AppContainer>
