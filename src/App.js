@@ -11,7 +11,7 @@ const AppContainer = styled.div`
   grid-template-columns: 1fr 3fr 1fr;
   padding: 16px;
   gap: 8px;
-  `
+`
 
 
 class App extends React.Component {
@@ -20,6 +20,7 @@ class App extends React.Component {
     valorMaximo: 0,
     buscarPorNome: "",
   }
+
 
   onChangeValorMinimo = (event) => {
     this.setState({ valorMinimo: event.target.value })
@@ -49,5 +50,5 @@ class App extends React.Component {
   }
 }
 
-export default App;
 
+export default App;
